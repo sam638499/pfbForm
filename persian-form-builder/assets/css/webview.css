@@ -1,0 +1,104 @@
+.pfb-wv-wrap { direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif; max-width: 100%; margin: 20px auto; color: #222; box-sizing: border-box; }
+.pfb-wv-wrap * { box-sizing: border-box; }
+.pfb-wv-error-box { background: #fdecea; color: #c0392b; padding: 16px; border-radius: 8px; text-align: center; max-width: 480px; margin: 40px auto; }
+
+/* فرم ورود */
+.pfb-wv-login-form { max-width: 360px; margin: 60px auto; background: #fff; border: 1px solid #e2e4e8; border-radius: 12px; padding: 32px 28px; box-shadow: 0 4px 18px rgba(0,0,0,.06); text-align: center; }
+.pfb-wv-login-form h2 { margin: 0 0 6px; font-size: 19px; }
+.pfb-wv-login-form .description { color: #777; font-size: 13px; margin-bottom: 20px; }
+.pfb-wv-password-input { width: 100%; padding: 11px 14px; border: 1.5px solid #dcdcde; border-radius: 8px; font-size: 15px; margin-bottom: 14px; text-align: center; font-family: inherit; }
+.pfb-wv-password-input:focus { outline: none; border-color: #2271b1; }
+.pfb-wv-login-error { color: #d63638; font-size: 13px; margin-top: 12px; }
+
+/* دکمه‌ها */
+.pfb-wv-btn { border: none; cursor: pointer; padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 700; background: #eef1f4; color: #333; transition: background .15s; font-family: inherit; display: inline-block; text-decoration: none; line-height: 1.4; }
+.pfb-wv-btn:hover { background: #e2e6ea; color: #333; }
+.pfb-wv-btn-primary { background: #2271b1; color: #fff; width: 100%; }
+.pfb-wv-btn-primary:hover { background: #195a8d; }
+.pfb-wv-btn-primary:disabled { opacity: .6; cursor: default; }
+
+/* نوار ابزار بالای جدول */
+.pfb-wv-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.pfb-wv-form-select { display: flex; align-items: center; gap: 8px; }
+.pfb-wv-form-select label { font-weight: 700; font-size: 14px; }
+.pfb-wv-form-select select { padding: 8px 12px; border: 1.5px solid #dcdcde; border-radius: 8px; font-size: 14px; font-family: inherit; background: #fff; min-width: 200px; }
+.pfb-wv-toolbar-actions { display: flex; align-items: center; gap: 8px; }
+
+.pfb-wv-print-hint { font-size: 12.5px; color: #888; margin: 0 0 12px; line-height: 1.9; }
+
+.pfb-wv-legend { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; flex-wrap: wrap; font-size: 13px; color: #444; }
+.pfb-wv-legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.pfb-wv-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.pfb-wv-dot-yellow { background: #f4d35e; }
+.pfb-wv-dot-green { background: #6fcf97; }
+
+/* جدول شبیه اکسل */
+.pfb-wv-table-scroll { overflow-x: auto; border: 1px solid #dfe1e5; border-radius: 10px; max-height: 75vh; overflow-y: auto; }
+.pfb-wv-table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 13.5px; background: #fff; }
+.pfb-wv-table th, .pfb-wv-table td { border: 1px solid #e4e6e9; padding: 9px 12px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; position: relative; }
+.pfb-wv-table thead th { font-weight: 700; color: #333; }
+.pfb-wv-header-row th { background: #f6f7f8; position: sticky; top: 0; z-index: 4; }
+.pfb-wv-filter-row th { background: #fff; position: sticky; top: 40px; z-index: 3; padding: 4px 6px; }
+.pfb-wv-summary-row th { background: #fbfbfc; position: sticky; top: 76px; z-index: 3; padding: 4px 6px; font-size: 11.5px; color: #2271b1; font-weight: 700; }
+.pfb-wv-table tbody tr:hover { filter: brightness(0.97); }
+.pfb-wv-col-num { width: 56px; color: #888; }
+.pfb-wv-col-select { width: 36px; }
+.pfb-wv-col-date { width: 92px; min-width: 92px; color: #555; white-space: normal; }
+.pfb-wv-date-line { font-weight: 700; }
+.pfb-wv-time-line { font-size: 11.5px; color: #888; }
+.pfb-wv-col-flag { width: 90px; }
+.pfb-wv-flag, .pfb-wv-select-row, .pfb-wv-select-all { width: 18px; height: 18px; cursor: pointer; accent-color: #2271b1; }
+.pfb-wv-thumb { max-width: 46px; max-height: 46px; border-radius: 4px; border: 1px solid #ddd; }
+.pfb-wv-doc-link { display: inline-block; padding: 4px 10px; background: #f0f4f9; border-radius: 6px; color: #2271b1; text-decoration: none; font-size: 12.5px; white-space: nowrap; }
+.pfb-wv-doc-link:hover { background: #e2e6ea; }
+.pfb-wv-empty { padding: 30px; color: #888; }
+.pfb-wv-print-only { display: none; font-weight: 700; }
+
+/* فیلتر هر ستون */
+.pfb-wv-filter-input {
+	width: 100%; padding: 4px 6px; border: 1.5px solid #dcdcde; border-radius: 5px;
+	font-family: inherit; font-size: 12px; text-align: center; background: #fff;
+}
+.pfb-wv-filter-input:focus { outline: none; border-color: #2271b1; background: #eef6ff; }
+
+/* دستگیره‌ی تغییر اندازه‌ی ستون */
+.pfb-wv-col-resizer {
+	position: absolute; top: 0; left: -3px; width: 6px; height: 100%; cursor: col-resize; z-index: 5; user-select: none;
+}
+.pfb-wv-col-resizer:hover, .pfb-wv-col-resizer:active { background: rgba(34,113,177,.35); }
+
+/* ورودی‌های قابل‌ویرایش مستقیم در جدول */
+.pfb-wv-editable-input {
+	width: 100%; min-width: 90px; padding: 5px 8px; border: 1.5px solid transparent; border-radius: 5px;
+	font-family: inherit; font-size: 13px; text-align: center; background: transparent; transition: border-color .15s, background .15s;
+}
+.pfb-wv-editable-input:hover { border-color: #dcdcde; background: #fbfbfc; }
+.pfb-wv-editable-input:focus { outline: none; border-color: #2271b1; background: #eef6ff; }
+.pfb-wv-editable-input:disabled { opacity: .5; }
+.pfb-wv-cell-saved { background: #e3f6ea !important; transition: background .3s; }
+
+/* رنگ‌آمیزی سطر بر اساس وضعیت ستون‌های تیک‌خوردنی */
+.pfb-wv-table tbody tr.pfb-wv-status-none:nth-child(even) { background: #fafbfc; }
+.pfb-wv-table tbody tr.pfb-wv-status-partial { background: #fdf6d9; }
+.pfb-wv-table tbody tr.pfb-wv-status-complete { background: #e3f6ea; }
+
+@media (max-width: 640px) {
+	.pfb-wv-login-form { margin: 30px 16px; padding: 26px 20px; }
+	.pfb-wv-toolbar { flex-direction: column; align-items: stretch; }
+	.pfb-wv-form-select select { min-width: 0; flex: 1; }
+	.pfb-wv-legend { gap: 10px; }
+}
+
+/* ===================== حالت چاپ ===================== */
+@media print {
+	body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+	.pfb-wv-toolbar, .pfb-wv-print-hint, .pfb-wv-legend { display: none !important; }
+	.pfb-wv-table-scroll { max-height: none; overflow: visible; border: none; }
+	.pfb-wv-table { font-size: 11px; table-layout: auto !important; }
+	.pfb-wv-table th, .pfb-wv-table td { width: auto !important; }
+	.pfb-wv-no-print { display: none !important; }
+	.pfb-wv-print-only { display: inline !important; }
+	.pfb-wv-header-row th, .pfb-wv-filter-row th, .pfb-wv-summary-row th { position: static; }
+	.pfb-wv-col-resizer { display: none !important; }
+	.pfb-wv-print-hide { display: none !important; }
+}

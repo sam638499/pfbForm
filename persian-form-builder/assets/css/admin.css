@@ -1,0 +1,68 @@
+.pfb-wrap { direction: rtl; text-align: right; }
+.pfb-wrap table.form-table th { text-align: right; width: 200px; }
+.pfb-wrap .pfb-table th, .pfb-wrap .pfb-table td { text-align: right; }
+
+.pfb-badge { padding: 3px 10px; border-radius: 20px; font-size: 12px; display: inline-block; }
+.pfb-badge-active { background: #d5f5e3; color: #1e8449; }
+.pfb-badge-inactive { background: #fdecea; color: #c0392b; }
+
+.pfb-btn-danger { color: #c0392b !important; border-color: #f1c2bd !important; }
+
+.pfb-shortcode-line { background: #fff; border: 1px solid #dcdcde; padding: 10px 14px; border-radius: 6px; }
+
+.pfb-tabs { display: flex; gap: 4px; border-bottom: 1px solid #dcdcde; margin: 20px 0 0; }
+.pfb-tab-btn { background: #f0f0f1; border: 1px solid #dcdcde; border-bottom: none; padding: 10px 18px; cursor: pointer; border-radius: 6px 6px 0 0; font-weight: 600; color: #555; }
+.pfb-tab-btn.active { background: #fff; color: #2271b1; border-bottom: 2px solid #fff; margin-bottom: -1px; }
+.pfb-tab-panel { display: none; background: #fff; border: 1px solid #dcdcde; padding: 20px; border-radius: 0 0 6px 6px; }
+.pfb-tab-panel.active { display: block; }
+
+.pfb-field-add-bar { margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.pfb-field-add-bar label { font-weight: 600; margin-left: 8px; }
+
+.pfb-fields-list { display: flex; flex-direction: column; gap: 10px; }
+.pfb-field-row { background: #f9f9fb; border: 1px solid #e0e0e5; border-radius: 8px; padding: 14px; position: relative; }
+.pfb-field-row-head { display: flex; align-items: center; gap: 10px; cursor: move; }
+.pfb-field-row-head .dashicons-move { color: #888; }
+.pfb-field-row-type-badge { background: #e5eef9; color: #2271b1; padding: 2px 10px; border-radius: 12px; font-size: 12px; white-space: nowrap; }
+.pfb-field-row-title-input { flex: 1; font-weight: 600; }
+.pfb-field-row-actions { display: flex; gap: 6px; }
+.pfb-field-row-body { margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+.pfb-field-row-body .full-width { grid-column: 1 / -1; }
+.pfb-field-row-body label { display: block; margin-bottom: 4px; font-size: 12px; color: #555; font-weight: 600; }
+.pfb-field-row-body input[type=text], .pfb-field-row-body select, .pfb-field-row-body textarea { width: 100%; }
+.pfb-required-toggle { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+.pfb-choices-textarea { min-height: 70px; }
+.pfb-field-row.pfb-sorting-placeholder { border: 2px dashed #2271b1; background: #eaf2fa; }
+.pfb-remove-field { color: #c0392b; cursor: pointer; text-decoration: none; }
+.pfb-empty-fields-msg { color: #888; padding: 20px; text-align: center; border: 1px dashed #ccc; border-radius: 8px; }
+
+/* نمایش شرطی فیلدها */
+.pfb-condition-block { background: #fbf7ff; border: 1px solid #e6d9f7; border-radius: 8px; padding: 10px 12px; }
+.pfb-condition-block > label { color: #6b3fa0 !important; }
+.pfb-cond-values-wrap { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.pfb-cond-value-item { display: flex; align-items: center; gap: 5px; font-size: 13px; font-weight: normal; color: #333; background: #fff; border: 1px solid #e6d9f7; border-radius: 14px; padding: 4px 10px; cursor: pointer; }
+.pfb-cond-value-item input { margin: 0; }
+
+.pfb-pagination { margin-top: 15px; display: flex; gap: 6px; }
+
+/* ردیف شکست صفحه در فیلدساز */
+.pfb-field-row-pagebreak { background: #fdf6e3; border: 1px dashed #d8b559; }
+.pfb-field-row-pagebreak .pfb-field-row-head { cursor: move; }
+.pfb-badge-pagebreak { background: #f5deb3; color: #8a6d1d; }
+.pfb-pagebreak-note { flex: 1; font-size: 12px; color: #8a6d1d; }
+
+/* ویرایشگر متن غنی (توضیحات و عنوان‌ها) */
+.pfb-richtext-wrap { border: 1px solid #dcdcde; border-radius: 6px; overflow: hidden; background: #fff; max-width: 100%; }
+.pfb-richtext-toolbar { display: flex; align-items: center; gap: 4px; background: #f6f7f7; border-bottom: 1px solid #dcdcde; padding: 5px 6px; flex-wrap: wrap; }
+.pfb-rt-btn { min-width: 30px; height: 28px; padding: 0 6px !important; line-height: 26px !important; }
+.pfb-rt-color { width: 28px; height: 28px; padding: 0; border: 1px solid #dcdcde; border-radius: 4px; cursor: pointer; }
+.pfb-rt-size { height: 28px; }
+.pfb-richtext-editable { min-height: 90px; padding: 10px 12px; outline: none; font-size: 14px; line-height: 1.9; }
+.pfb-richtext-editable.pfb-richtext-oneline { min-height: 20px; white-space: nowrap; overflow-x: auto; }
+.pfb-richtext-editable:focus { background: #fbfdff; }
+
+/* ستون‌های وضعیت (تیک‌خوردنی‌های قابل مدیریت در صفحه پاسخ‌ها) */
+.pfb-flags-list { display: flex; flex-direction: column; gap: 8px; }
+.pfb-flag-row { display: flex; align-items: center; gap: 10px; background: #f9f9fb; border: 1px solid #e0e0e5; border-radius: 8px; padding: 10px 14px; }
+.pfb-flag-row .dashicons-move { color: #888; cursor: move; }
+.pfb-flag-row .pfb-flag-label { flex: 1; }

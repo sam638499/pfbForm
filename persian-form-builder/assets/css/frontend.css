@@ -1,0 +1,225 @@
+.pfb-form-wrapper { direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, "IRANSans", sans-serif; max-width: 640px; margin: 0 auto; background: #fff; border-radius: 14px; box-shadow: 0 2px 20px rgba(0,0,0,.08); overflow: visible; }
+.pfb-form-wrapper * { box-sizing: border-box; }
+
+.pfb-step { display: none; padding: 32px 28px; animation: pfb-fade .25s ease; }
+.pfb-step.active { display: block; }
+@keyframes pfb-fade { from { opacity: 0; transform: translateY(6px);} to {opacity: 1; transform: translateY(0);} }
+
+.pfb-step-welcome { text-align: center; }
+.pfb-welcome-image img { max-width: 100%; border-radius: 10px; margin-bottom: 18px; }
+.pfb-welcome-title { font-size: 22px; margin: 0 0 10px; }
+.pfb-welcome-desc { color: #555; line-height: 2; margin-bottom: 22px; }
+
+.pfb-form-title { font-size: 20px; margin: 0 0 6px; }
+.pfb-form-desc { color: #666; margin-bottom: 20px; line-height: 1.9; }
+
+.pfb-btn { display: inline-block; border: none; cursor: pointer; padding: 12px 30px; border-radius: 8px; font-size: 15px; font-weight: 700; transition: .15s; }
+.pfb-btn-primary { background: #2271b1; color: #fff; }
+.pfb-btn-primary:hover { background: #195a8d; }
+.pfb-btn-secondary { background: #eef1f4; color: #333; }
+.pfb-btn-secondary:hover { background: #e2e6ea; }
+
+.pfb-page { display: none; }
+.pfb-page.active { display: block; }
+.pfb-page-nav { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.pfb-page-nav .pfb-btn { flex: 0 0 auto; }
+.pfb-page-indicator { text-align: center; color: #888; font-size: 12px; margin-bottom: 14px; }
+
+.pfb-fields { display: flex; flex-direction: column; gap: 20px; margin-bottom: 22px; }
+.pfb-field { }
+.pfb-label { font-weight: 700; margin-bottom: 8px; display: block; font-size: 14px; color: #222; }
+.pfb-required-star { color: #d63638; margin-right: 3px; }
+.pfb-input { width: 100%; padding: 11px 13px !important; border: 1.5px solid #dcdcde; border-radius: 8px; font-size: 14px !important; font-family: inherit; transition: border-color .15s; background: #fff; box-sizing: border-box !important; }
+.pfb-input:focus { outline: none; border-color: #2271b1; }
+.pfb-hint { color: #888; font-size: 12px; margin-top: 4px; display: block; }
+.pfb-field-error { color: #d63638; font-size: 12px; margin-top: 6px; display: none; }
+.pfb-field.pfb-has-error .pfb-input { border-color: #d63638; }
+.pfb-field.pfb-has-error .pfb-field-error { display: block; }
+
+.pfb-radio-group { display: flex; flex-direction: column; gap: 8px; }
+.pfb-radio-item { display: flex; align-items: center; gap: 8px; background: #f7f7f8; padding: 10px 14px; border-radius: 8px; cursor: pointer; border: 1.5px solid transparent; }
+.pfb-radio-item:hover { background: #f0f4f9; }
+.pfb-radio-item input:checked ~ span { color: #2271b1; font-weight: 700; }
+
+.pfb-alert { padding: 10px 14px; border-radius: 8px; margin-bottom: 14px; font-size: 13px; }
+.pfb-alert-error { background: #fdecea; color: #c0392b; }
+.pfb-error-box { background: #fdecea; color: #c0392b; padding: 14px; border-radius: 8px; }
+
+/* آپلود تصویر */
+.pfb-image-upload { position: relative; }
+.pfb-image-preview { margin-top: 10px; }
+.pfb-image-preview img { max-width: 160px; max-height: 160px; border-radius: 8px; border: 1px solid #ddd; }
+.pfb-file-name-preview { display: inline-block; padding: 8px 14px; background: #f0f4f9; border-radius: 8px; font-size: 13px; color: #333; }
+
+/* تاریخ شمسی */
+.pfb-date-wrapper { position: relative; }
+.pfb-jalali-date { cursor: pointer; background: #fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23888'><path d='M4 2v2H2v12h14V4h-2V2h-2v2H6V2H4zm10 5v7H4V7h10z'/></svg>") no-repeat left 12px center; }
+.pfb-calendar { position: absolute; z-index: 50; top: calc(100% + 6px); right: 0; width: 280px; max-height: 320px; overflow-y: auto; background: #fff; border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.15); border: 1px solid #eee; padding: 12px; display: none; }
+.pfb-calendar.open { display: block; }
+.pfb-cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.pfb-cal-head button { background: #f0f4f9; border: none; width: 28px; height: 28px; border-radius: 6px; cursor: pointer; font-size: 14px; flex-shrink: 0; }
+.pfb-cal-title { font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 10px; }
+.pfb-cal-label { cursor: pointer; padding: 3px 8px; border-radius: 6px; }
+.pfb-cal-label:hover { background: #eaf2fa; color: #2271b1; }
+.pfb-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; text-align: center; }
+.pfb-cal-dow { font-size: 11px; color: #999; padding: 4px 0; }
+.pfb-cal-day { padding: 7px 0; border-radius: 6px; cursor: pointer; font-size: 13px; }
+.pfb-cal-day:hover { background: #eaf2fa; }
+.pfb-cal-day.pfb-cal-today { border: 1px solid #2271b1; }
+.pfb-cal-day.pfb-cal-selected { background: #2271b1; color: #fff; }
+.pfb-cal-day.pfb-cal-empty { visibility: hidden; }
+
+.pfb-cal-month-grid, .pfb-cal-year-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pfb-cal-month-item, .pfb-cal-year-item { padding: 10px 4px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+.pfb-cal-month-item:hover, .pfb-cal-year-item:hover { background: #eaf2fa; }
+.pfb-cal-month-item.pfb-cal-selected, .pfb-cal-year-item.pfb-cal-selected { background: #2271b1; color: #fff; }
+
+/* پلاک خودرو — طراحی شبیه‌سازی‌شده مطابق پلاک واقعی ایران، با خانه‌های تک‌رقمی مجزا (مثل کد تایید پیامکی) */
+.pfb-plate-field { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.pfb-plate-box {
+	direction: ltr; /* پلاک همیشه چپ‌به‌راست است، مستقل از جهت صفحه */
+	position: relative;
+	display: flex; align-items: stretch; height: 90px; width: 100%; max-width: 420px; margin: 0 auto;
+	border: 4px solid #161616; border-radius: 14px; overflow: hidden; background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,.22), inset 0 0 0 2px rgba(255,255,255,.4);
+	font-family: 'Vazirmatn', Tahoma, sans-serif;
+}
+
+/* نوار آبی سمت چپ: پرچم + نوشته I.R. IRAN (دقیقاً مطابق پلاک واقعی) */
+.pfb-plate-flag {
+	flex: 0 0 32px; width: 32px; min-width: 32px; max-width: 32px; box-sizing: border-box;
+	background: linear-gradient(180deg, #0d4fb0, #0a3e8c);
+	display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+	padding: 5px 2px; border-right: 1px solid rgba(0,0,0,.25);
+}
+.pfb-plate-flag-stripes { width: 20px; height: 12px; border-radius: 2px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 0 0 1px rgba(255,255,255,.5); }
+.pfb-flag-g, .pfb-flag-w, .pfb-flag-r { flex: 1; }
+.pfb-flag-g { background: #239f40; }
+.pfb-flag-w { background: #fff; }
+.pfb-flag-r { background: #da0000; }
+.pfb-plate-flag-text { color: #fff; font-size: 8px; font-weight: 700; line-height: 1.35; text-align: center; letter-spacing: .3px; }
+
+/* بخش سفید اصلی: دو رقم - حرف - سه رقم */
+.pfb-plate-main {
+	flex: 1 1 auto; position: relative; display: flex; align-items: center; justify-content: center; gap: 8px;
+	background-color: #fff;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='48'><text x='2' y='30' font-family='Tahoma,Arial' font-size='14' font-weight='700' fill='%23000000' fill-opacity='0.025' transform='rotate(-18 60 24)'>IRAN</text></svg>");
+	background-repeat: repeat;
+	padding: 0 6px; border-left: 2px solid #161616; min-width: 0; overflow: hidden;
+}
+
+/* هر گروه از چند خانه‌ی تک‌رقمی مجزا تشکیل شده — هر خانه دقیقاً برای یک رقم اندازه‌گیری شده، بدون فضای خالی اضافه */
+.pfb-plate-cellgroup { display: flex; gap: 3px; flex: 0 0 auto; }
+.pfb-plate-cell {
+	font-family: 'Vazirmatn', Tahoma, sans-serif; font-weight: 800; color: #151515;
+	text-align: center; background-color: rgba(255,255,255,.95); border: 1.5px dashed #c7cbcf !important; border-radius: 0 !important;
+	padding: 0 !important; margin: 0 !important; box-sizing: border-box !important; flex: 0 0 auto;
+	text-shadow: 0 1px 0 rgba(255,255,255,.6); box-shadow: none;
+	-webkit-appearance: none; -moz-appearance: none; appearance: none;
+	width: 34px !important; min-width: 34px !important; max-width: 34px !important;
+	height: 70px !important; line-height: 70px !important; font-size: 36px !important;
+}
+.pfb-plate-cell:focus {
+	outline: none; border-color: #2271b1 !important; border-style: solid !important; background-color: #eef6ff;
+}
+
+.pfb-plate-letter-wrap { position: relative; flex: 0 0 auto; width: 66px !important; min-width: 66px !important; max-width: 66px !important; }
+.pfb-plate-letter {
+	font-family: 'Vazirmatn', Tahoma, sans-serif; font-weight: 800; color: #151515;
+	text-align: center; background-color: rgba(255,255,255,.95); border: 1.5px dashed #c7cbcf !important; border-radius: 0 !important;
+	padding: 0 !important; margin: 0 !important; box-sizing: border-box !important; cursor: pointer;
+	text-shadow: 0 1px 0 rgba(255,255,255,.6); box-shadow: none; display: block;
+	-webkit-appearance: none; -moz-appearance: none; appearance: none;
+	width: 66px !important; min-width: 66px !important; max-width: 66px !important;
+	height: 70px !important; line-height: 70px !important; font-size: 30px !important;
+}
+.pfb-plate-letter:focus, .pfb-plate-letter:hover {
+	outline: none; border-color: #2271b1 !important; border-style: solid !important; background-color: #eef6ff;
+}
+
+/* پنجره‌ی شبکه‌ای انتخاب حرف پلاک — مشابه شبکه‌ی انتخاب ماه/سال در تقویم شمسی */
+.pfb-plate-letter-grid {
+	position: fixed; z-index: 9999;
+	width: 230px; max-width: calc(100vw - 40px); max-height: 260px; overflow-y: auto;
+	background: #fff; border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.18); border: 1px solid #eee;
+	padding: 10px; display: none; direction: rtl;
+}
+.pfb-plate-letter-grid.open { display: block; }
+.pfb-plate-letter-grid-title { font-weight: 700; font-size: 12px; color: #555; text-align: center; margin-bottom: 8px; }
+.pfb-plate-letter-grid-items { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; }
+.pfb-plate-letter-item {
+	padding: 8px 0; border-radius: 6px; cursor: pointer; font-size: 15px; font-weight: 700; text-align: center;
+	font-family: 'Vazirmatn', Tahoma, sans-serif; color: #222;
+}
+.pfb-plate-letter-item:hover { background: #eaf2fa; color: #2271b1; }
+.pfb-plate-letter-item.pfb-plate-letter-selected { background: #2271b1; color: #fff; }
+
+/* نوار آبی سمت راست: ایران + کد شهر (فیلد قابل ویرایش) */
+.pfb-plate-ir {
+	flex: 0 0 90px; width: 90px !important; min-width: 90px !important; max-width: 90px !important; box-sizing: border-box;
+	background: linear-gradient(180deg, #0d4fb0, #0a3e8c); color: #fff; display: flex; flex-direction: column; align-items: center;
+	justify-content: center; padding: 4px 6px; border-left: 1px solid rgba(0,0,0,.25);
+}
+.pfb-plate-iran { font-size: 15px !important; font-weight: 700; white-space: nowrap; }
+.pfb-plate-cellgroup-ir { margin-top: 5px; gap: 4px; }
+.pfb-plate-cell-ir {
+	font-family: 'Vazirmatn', Tahoma, sans-serif; box-sizing: border-box !important; flex: 0 0 auto;
+	border: 1.5px dashed rgba(255,255,255,.55) !important; border-radius: 0 !important; background-color: rgba(255,255,255,.12);
+	color: #fff; text-align: center; font-weight: 800; box-shadow: none; margin: 0 !important;
+	-webkit-appearance: none; -moz-appearance: none; appearance: none;
+	width: 32px !important; min-width: 32px !important; max-width: 32px !important;
+	height: 42px !important; line-height: 42px !important; font-size: 24px !important; padding: 0 !important;
+}
+.pfb-plate-cell-ir:focus { outline: none; border-color: #fff !important; border-style: solid !important; background-color: rgba(255,255,255,.3); }
+
+.pfb-plate-hint { font-size: 12px; color: #888; margin: 0; }
+@media (max-width: 480px) {
+	.pfb-step { padding: 22px 16px; }
+	.pfb-plate-box { height: 72px; max-width: 100%; border-radius: 11px; }
+	.pfb-plate-flag { flex-basis: 24px; width: 24px; min-width: 24px; max-width: 24px; }
+	.pfb-plate-flag-stripes { width: 14px; height: 9px; }
+	.pfb-plate-flag-text { font-size: 5px; }
+	.pfb-plate-main { padding: 0 4px; gap: 4px; }
+	.pfb-plate-cellgroup { gap: 2px; }
+	.pfb-plate-cell { width: 22px !important; min-width: 22px !important; max-width: 22px !important; height: 56px !important; line-height: 56px !important; font-size: 24px !important; }
+	.pfb-plate-letter { width: 44px !important; min-width: 44px !important; max-width: 44px !important; height: 56px !important; line-height: 56px !important; font-size: 19px !important; }
+	.pfb-plate-letter-wrap { width: 44px !important; min-width: 44px !important; max-width: 44px !important; }
+	.pfb-plate-letter-grid { width: 200px; }
+	.pfb-plate-letter-grid-items { grid-template-columns: repeat(4, 1fr); }
+	.pfb-plate-ir { flex-basis: 60px; width: 60px !important; min-width: 60px !important; max-width: 60px !important; padding: 4px 4px; }
+	.pfb-plate-iran { font-size: 9px !important; }
+	.pfb-plate-cellgroup-ir { gap: 2px; margin-top: 3px; }
+	.pfb-plate-cell-ir { width: 21px !important; min-width: 21px !important; max-width: 21px !important; height: 30px !important; line-height: 30px !important; font-size: 15px !important; }
+}
+
+/* فیلد طیفی (اسلایدر امتیازی) */
+.pfb-range-field { padding: 4px 2px; }
+.pfb-range-value-bubble { text-align: center; margin-bottom: 10px; }
+.pfb-range-value {
+	display: inline-block; min-width: 34px; background: #2271b1; color: #fff; font-weight: 700;
+	padding: 4px 14px; border-radius: 20px; font-size: 14px; line-height: 1.4;
+}
+.pfb-input.pfb-range-input {
+	width: 100%; -webkit-appearance: none; appearance: none; height: 6px; border-radius: 4px;
+	background: linear-gradient(90deg, #2271b1, #2271b1) no-repeat, #e2e6ea;
+	background-size: 50% 100%;
+	border: none; padding: 0; cursor: pointer; margin: 0;
+}
+.pfb-input.pfb-range-input:focus { outline: none; border: none; }
+.pfb-input.pfb-range-input::-webkit-slider-thumb {
+	-webkit-appearance: none; appearance: none; width: 20px; height: 20px; border-radius: 50%;
+	background: #fff; border: 3px solid #2271b1; box-shadow: 0 1px 4px rgba(0,0,0,.25); cursor: pointer;
+	margin-top: -7px;
+}
+.pfb-input.pfb-range-input::-moz-range-thumb {
+	width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 3px solid #2271b1;
+	box-shadow: 0 1px 4px rgba(0,0,0,.25); cursor: pointer;
+}
+.pfb-input.pfb-range-input::-moz-range-track { height: 6px; border-radius: 4px; background: #e2e6ea; border: none; }
+.pfb-input.pfb-range-input::-moz-range-progress { height: 6px; border-radius: 4px; background: #2271b1; }
+.pfb-range-labels { display: flex; justify-content: space-between; font-size: 12px; color: #777; margin-top: 8px; }
+
+@media (max-width: 480px) {
+	.pfb-page-nav { flex-wrap: wrap; }
+	.pfb-page-nav .pfb-btn { flex: 1 1 auto; text-align: center; padding: 12px 16px; }
+}
